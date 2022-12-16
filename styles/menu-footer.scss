@@ -1,0 +1,72 @@
+.menu-footer__button-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu-footer__call-button {
+  padding: 0;
+  border: none;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/img/svg/call.svg");
+}
+.menu-footer__chat-button {
+  padding: 0;
+  border: none;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/img/svg/chat.svg");
+}
+
+.menu-footer__profile-button {
+  padding: 0;
+  border: none;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/img/svg/profile.svg");
+}
+.menu-footer__button_margin {
+  margin-right: 16px;
+}
+.menu-footer__email {
+  text-decoration: none;
+  color: $color-text;
+  &:hover {
+    opacity: 0.5;
+    transition: 1s;
+  }
+}
+.menu-footer__tel {
+  text-decoration: none;
+  color: $color-text;
+  font-family: $lakes-bold;
+  font-size: 24px;
+}
+.menu-footer__block-contact {
+  margin-top: 16px;
+}
+.menu-footer__change-lang {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.menu-footer__change-lang-button {
+  border: none;
+  padding-bottom: 98px;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 25px;
+  &:not(:last-of-type) {
+    margin-right: 7px;
+  }
+  &:hover {
+    opacity: 0.5;
+    transition: 1s;
+  }
+}

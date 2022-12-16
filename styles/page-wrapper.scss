@@ -1,0 +1,21 @@
+@media screen and (min-width: 1366px) {
+  .page-wrapper {
+    margin: auto;
+    max-width: 1650px;
+    display: flex;
+    justify-content: center;
+  }
+  .page-wrapper.page-wrapper_blur {
+    position: relative;
+    z-index: -1;
+    transition-duration: 0.5s;
+    background: $white;
+    opacity: 0.1;
+  }
+}
+.page-wrapper.page-wrapper_index {
+  position: relative;
+  z-index: -2;
+}
+
+

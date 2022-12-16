@@ -1,0 +1,11 @@
+.body-wrapper.body-wrapper_blur {
+  position: relative;
+  z-index: -1;
+  transition-duration: 0.5s;
+  background: $white;
+  opacity: 0.1;
+}
+
+.body-wrapper {
+  overflow-x: hidden;
+}

@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1365px) {
+  .content__section-button {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    color: #7e7e82;
+    overflow-x: scroll;
+    padding-bottom: 24px;
+    margin-bottom: -20px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .content__nav-button-gradient {
+    position: $position-absolute;
+    height: 40px;
+    width: 24px;
+    z-index: 5;
+    right: 0;
+    background: linear-gradient(
+      270deg,
+      #f8f8f8 16.84%,
+      rgba(248, 248, 248, 0.0001) 100%
+    );
+  }
+}
+
+.content__nav-button {
+  appearance: none;
+  border: 2px solid $body-color;
+  font-family: $lakes-regular;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  color: $color-text-button;
+  background-color: $body-color;
+  margin-top: 8px;
+  &:hover {
+    border: 2px solid $aqua;
+    background-color: $white;
+  }
+}
+
+.content__section-button_overflow-hidden {
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1365px) {
+  .content__section-button {
+    margin-left: 24px;
+  }
+}

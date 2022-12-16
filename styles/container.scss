@@ -1,0 +1,22 @@
+@media only screen and (min-width: 1366px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    margin: auto;
+    max-width: $content-width;
+    margin-top: 24px;
+  }
+
+  .container__button {
+    max-width: $content-width;
+    padding-left: 42px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1365px) {
+  .container {
+    margin: 0 16px 0 16px;
+  }
+}

@@ -1,0 +1,141 @@
+@media screen and (min-width: 767px) {
+  .table-price__header {
+    display: grid;
+    grid-template-columns: 52% 13% 14%;
+    grid-template-rows: 64px;
+    align-items: center;
+    margin-left: 20px;
+    color: $color-text-button;
+  }
+
+  .table-price__border {
+    position: relative;
+    top: 20px;
+    border-bottom: 1px solid $divider_color;
+  }
+
+  .table-price__colomn.swiper-slide {
+    margin: 0 100px 0 0;
+    border: 0;
+    max-width: 95%;
+    padding-left: 20px;
+    color: $color-text;
+
+    &:first-child {
+      border-top: 6px;
+    }
+
+    &:last-child {
+      border-bottom: 6px;
+    }
+  }
+
+  .swiper-slide__link-prices p:nth-child(odd) {
+    display: none;
+  }
+
+  .swiper-slide__link-prices p:nth-child(even) {
+    margin: 0;
+  }
+
+  .swiper-slide__wrapper-prices {
+    display: grid;
+    grid-template-columns: 53% 14% 14% 19%;
+    color: $color-text;
+    align-items: center;
+    div {
+      justify-self: flex-end;
+    }
+  }
+
+  .swipper-slide__order-link-prices {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    background: url("/img/svg/Rectangle.svg") no-repeat;
+  }
+
+  .swiper-wrapper_table.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .swiper-container_prices {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1365px) {
+  .swiper-wrapper_table.swiper-wrapper {
+    margin: 0px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  .swiper-container_prices {
+    padding: 20px;
+    max-width: 1120px;
+    margin: auto;
+  }
+
+  .swiper-wrapper_table.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table-price__colomn.swiper-slide {
+    width: 260px;
+    height: 170px;
+  }
+
+  .table-price__header {
+    display: none;
+  }
+
+  .swiper-slide__wrapper-prices {
+    position: $position-relative;
+    height: 100%;
+  }
+
+  .swiper-slide__link-prices {
+    color: $color-text;
+    text-decoration: none;
+  }
+
+  .swiper-slide__link-prices p {
+    font-size: 14px;
+    font-family: $lakes-medium;
+    margin: 0;
+  }
+
+  .swiper-slide__link-prices p:nth-child(odd) {
+    margin: 0px 0px 2px 0px;
+    color: #7e7e82;
+  }
+
+  .swiper-slide__link-prices p:nth-child(even) {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .swipper-slide__order-link-prices {
+    position: $position-absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    background: url("/img/svg/Rectangle.svg") no-repeat;
+  }
+}

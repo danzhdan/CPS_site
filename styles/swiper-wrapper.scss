@@ -1,0 +1,22 @@
+@media only screen and (min-width: 767px) and (max-width: 1365px) {
+  .swiper-wrapper_brands {
+    margin-left: 20px;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+}
+

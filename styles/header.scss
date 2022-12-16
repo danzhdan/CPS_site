@@ -1,0 +1,157 @@
+@media only screen and (min-width: 767px) {
+  .header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .header__action-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: $position-relative;
+    height: 40px;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .header__button_hidden {
+    display: none;
+  }
+  .content-page__button-block {
+    display: none;
+  }
+  .header__divider_hidden {
+    display: none;
+  }
+  .content-page__block-text-p2 {
+    display: none;
+  }
+  .header__action-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: $position-relative;
+    height: 40px;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .header__divider {
+    display: none;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+}
+.header__left-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header__action-button-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+.header__button {
+  padding: 0;
+  border: none;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.header__burger-button {
+  padding: 0;
+  border: none;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/img/svg/burger.svg") no-repeat;
+}
+.header__call-button {
+  padding: 0;
+  border: none;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/img/svg/call.svg") no-repeat;
+}
+.header__chat-button {
+  padding: 0;
+  border: none;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/img/svg/chat.svg") no-repeat;
+}
+.header__repair-button {
+  padding: 0;
+  border: none;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/img/svg/repair.svg") no-repeat;
+}
+.header__search-button {
+  padding: 0;
+  border: none;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/img/svg/search.svg") no-repeat;
+}
+.header__profile-button {
+  padding: 0;
+  border: none;
+  background-color: $background-transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: url("/img/svg/profile.svg") no-repeat;
+}
+.header__button-size {
+  width: 40px;
+  height: 40px;
+}
+.header__button_margin {
+  margin-right: 16px;
+}
+.header__divider {
+  width: 2px;
+  height: 32px;
+  background-color: $divider_color;
+  border-radius: 1px;
+  margin-right: 20px;
+}
+.header__logo {
+  height: 52px;
+  width: 98px;
+}
+@media only screen and (max-width: 1365px) {
+  .header-wrapper {
+    background-color: $white;
+    border-bottom: 1px solid $border-top-color;
+  }
+}
+@media only screen and (min-width: 1365px) {
+  .header-wrapper {
+    display: none;
+  }
+}

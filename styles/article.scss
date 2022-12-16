@@ -1,0 +1,35 @@
+@media screen and (max-width: 767px) {
+  .article {
+    width: 80%;
+    margin: 14px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .article {
+    width: 50%;
+    margin: 20px;
+  }
+}
+
+.article__text {
+  font-family: $lakes-regular;
+  font-size: 14px;
+  margin-bottom: 14px;
+  line-height: 18px;
+  color: $color-text;
+}
+
+.article__link {
+  text-decoration: none;
+  color: $color-text;
+  font-family: $lakes-medium;
+  &::after {
+    position: $position-relative;
+    top: 6px;
+    left: 6px;
+    content: "";
+    background: url("/img/svg/link-arrow-article.svg") no-repeat;
+    padding-left: 12px;
+  }
+}

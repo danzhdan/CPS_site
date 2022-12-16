@@ -1,0 +1,133 @@
+.callback-form__button-close {
+  background: transparent;
+  border: none;
+  background: url("/img/svg/burger_close.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+  margin: 24px 16px 40px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+  .callback-form__container {
+    width: 440px;
+    min-height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    z-index: 150;
+  }
+
+  .callback-form__button-close {
+    position: absolute;
+    left: -100px;
+  }
+  .callback-form__header {
+    margin-top: 32px;
+  }
+
+  .callback-form__button-send {
+    position: relative;
+    left: 60%;
+    right: 0;
+    background: transparent;
+    border: none;
+    background: url("/img/svg/send-button.svg") no-repeat;
+    width: 136px;
+    height: 32px;
+    margin: 24px 16px 40px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 767px) {
+  .callback-form__container {
+    width: 320px;
+    min-height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: white;
+    z-index: 150;
+  }
+
+  .callback-form__button-send {
+    position: relative;
+    left: 40%;
+    right: 0;
+    background: transparent;
+    border: none;
+    background: url("/img/svg/send-button.svg") no-repeat;
+    width: 136px;
+    height: 32px;
+    margin: 24px 16px 40px;
+    cursor: pointer;
+  }
+}
+
+.callback-form__header {
+  font-family: $lakes-bold;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    position: relative;
+    width: 4px;
+    height: 40px;
+    background: $aqua;
+    margin-right: 16px;
+    border-radius: 0 50px 50px 0;
+    left: 0px;
+  }
+}
+
+.callback-form__input {
+  margin: 16px 16px 0 16px;
+  width: 85%;
+  height: 20px;
+  border: 1px solid $divider_color;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: $lakes-regular;
+}
+
+.callback-form__input {
+  margin: 24px 16px 0 16px;
+}
+
+.callback-form__input::placeholder {
+  color: #b5b6bc;
+}
+
+.callback-form__text {
+  font-family: $lakes-medium;
+  font-size: 14px;
+  margin: 16px;
+  color: $color-text-button;
+  width: 85%;
+  a {
+    background: transparent;
+    color: $red;
+    text-decoration: none;
+  }
+}
+
+.callback-form__send-form {
+  display: flex;
+}
+
+.callback-form__container {
+  transform: translateX(700px);
+  transition-duration: 1s;
+  display: none;
+}
+
+.callback-form__container.callback-form__container_block {
+  display: block;
+}
+
+.callback-form__container.callback-form__container_show {
+  transform: translateX(0px);
+  transition-duration: 0.7s;
+}
